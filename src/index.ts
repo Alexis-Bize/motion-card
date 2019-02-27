@@ -156,7 +156,7 @@ const initializeDeviceMotionEvent = (): void => {
 
     setTimeout(() => {
         motionEventRegistered === false &&
-            displayError('Something went wrong...', infoDOMRender) &&
+            displayError('Something went wrong. Your browser might not be supported', infoDOMRender) &&
             frameDOMRender.classList.remove('lenticular-effect');
     }, 1000);
 };
