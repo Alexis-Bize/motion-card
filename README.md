@@ -2,6 +2,7 @@
 Add **lenticular effect** to images on devices that support the `DeviceMotion` event. **iOS 12.2+** unfortunately excluded.
 
 ![Motion card](lenticular-example.gif)
+
 **Art courtesy of [William Cameron](https://twitter.com/pixelflaregfx).**
 
 # Demo
