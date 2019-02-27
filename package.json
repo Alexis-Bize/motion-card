@@ -1,0 +1,29 @@
+{
+    "name": "motion-card",
+    "description": "Simulate lenticular effect with \"DeviceMotion\" event.",
+    "version": "0.0.1",
+    "license": "MIT",
+    "author": {
+        "name": "Alexis Bize",
+        "email": "alexis.bize@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Alexis-Bize/motion-card"
+    },
+    "scripts": {
+        "build": "npm run clean && tsc",
+        "clean": "rm -rf ./public/bundles",
+        "start": "npm run build && npm run serve",
+        "serve": "serve -l 8280 -n -c ./serve.json",
+        "watch": "npm run clean; tsc-watch --onSuccess \"npm run serve\""
+    },
+    "dependencies": {
+        "serve": "^10.1.2"
+    },
+    "devDependencies": {
+        "@types/node": "^11.9.5",
+        "tsc-watch": "^2.1.2",
+        "typescript": "^3.3.3333"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "target": "es2015",
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "removeComments": true,
+        "sourceMap": false,
+        "strictNullChecks": true,
+        "noUnusedLocals": true,
+        "declaration": false,
+        "outFile": "./public/bundles/motion-card.js"
+    },
+    "include": ["./src/**/*"],
+	"exclude": ["./dist", "./node_modules"]
+}
