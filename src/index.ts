@@ -204,8 +204,8 @@ const preloadAssets = (cb: Function) => {
 // *** START *** /
 
 if (isMotionEventSupported()) {
-    preloadAssets((preloadError: Error | void) => {
-        if (preloadError) displayError(preloadError.message, infoDOMRender);
+    preloadAssets((preloadError: Error | null) => {
+        if (preloadError !== null) displayError(preloadError.message, infoDOMRender);
         else initializeDeviceMotionEvent();
     });
 } else displayError('Device not supported! :(', infoDOMRender);
