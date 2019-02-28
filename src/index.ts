@@ -150,10 +150,6 @@ const handleMotionEvent = (event: DeviceMotionEvent): void => {
 
 const initializeDeviceMotionEvent = (): void => {
     window.addEventListener('devicemotion', handleMotionEvent, true);
-    frameDOMRender.addEventListener('click', () => {
-        frameDOMRender.requestFullscreen();
-    });
-
     setTimeout(() => {
         motionEventRegistered === false &&
             displayError('Something went wrong. Your browser might not be supported.', infoDOMRender) &&
